@@ -1,2 +1,70 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+#!/bin/bash
+
+score=0
+
+echo "Bienvenue au quiz interactif !"
+echo
+
+# Question 1
+echo "1. Quelle est la capitale du Niger ?"
+read -p "Votre réponse : " reponse
+if [[ "$reponse" == "Niamey" || "$reponse" == "Niamey" ]]; then
+    echo "Bonne réponse !"
+    ((score++))
+else
+    echo "Faux. La bonne réponse est Niamey."
+fi
+echo
+# Question 2
+echo "2. Combien font 5 x 6 ?"
+read -p "Votre réponse : " reponse
+if [[ "$reponse" == "30" ]]; then
+    echo "Bonne réponse !"
+    ((score++))
+else
+    echo "Faux. La bonne réponse est 30."
+fi
+echo
+# Question 3
+echo "3. Quelle est la langue la plus parlée au Niger ?"
+read -p "Votre réponse : " reponse
+if [[ "$reponse" == "Haoussa" || "$reponse" == "Haoussa" ]]; then
+    echo "Bonne réponse !"
+    ((score++))
+else
+    echo "Faux. La bonne réponse est Haoussa."
+fi
+echo
+# Question 4
+echo "4.Où est situé Codeloccol ?"
+read -p "Votre réponse : " reponse
+if [["$reponse" == "Sadoré" || "$reponse" == "Sadoré"]]; then
+    echo "Bonne réponse !"
+    ((score++))
+else
+    echo "Faux. La bonne réponse est Sadoré."
+fi
+echo 
+# Question 5
+echo "1. Qui est tonton boss ?"
+read -p "Votre réponse : " reponse
+if [[ "$reponse" == " Dir_Codeloccol" || "$reponse" == "Dir_Codeloccol" ]]; then
+    echo "Bonne réponse !"
+    ((score++))
+else
+    echo "Faux. La bonne réponse est Dir_Codeloccol."
+fi
+echo   
+# Question 6 
+echo "1. Date de création du Codeloccol ?"
+read -p "Votre réponse : " reponse
+if [[ "$reponse" == "2020" || "$reponse" == "2020" ]]; then
+    echo "Bonne réponse !"
+    ((score++))
+else
+    echo "Faux. La bonne réponse est 2020."
+fi
+echo
+
+echo "Quiz terminé ! Votre score est de $score sur 6."
+
